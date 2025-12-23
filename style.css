@@ -86,3 +86,49 @@ nav a:hover{
     height: 100%;
     object-fit: cover;
 }
+.hero-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.hero-content h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero-button{
+    background: #523026;
+    color:#CDA592;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.hero-button:hover{
+    background: #CDA592;
+    color: #000;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+.random-dessert{
+    display: none;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.95);
+    padding: 15px;
+    border-radius: 15px;
+    color: #4a3933;
+    text-align: center;
+}
+.random-dessert.show{
+    display: block;
+    animation: fadeIn 0.5s;
+}
