@@ -132,6 +132,36 @@ function generateRandomDessert() {
     display.classList.add('show');
 }
 
+function openModal(id){
+    let dessert;
+
+    for (let i = 0; i < desserts.length; i++){
+        if (desserts[i].id === id) {
+            dessert = desserts[i];
+            break;
+        }
+    }
+
+    document.getElementById("recipe-title").textContent = dessert.name;
+    document.getElementById("recipe-image").innerHTML= `<img src="${dessert.image}" 
+    style="width: 150px; height: 150px; object-fit: cover; border-radius: 10px;">`;
+    document.getElementById("recipe-description").textContent = dessert.description;
+
+    let ingredientsList = "";
+    for (let i = 0; i < dessert.ingredients.length; i++){
+        ingredientsList += "<li>" + dessert.ingredients[i] + "</li>";
+    }
+    document.getElementById("ingredientsList").innerHTML = ingredientsList;
+
+    let stepsList = "";
+    for (let i = 0; i < dessert.steps.length; i++){
+        stepsList += "<li>" + dessert.steps[i] + "</li>";
+    }
+    document.getElementById("stepsList").innerHTML = stepsList;
+
+    document.getElementById("recipeBox").classList.add("show");
+}
+
 let currentSlide = 0;
 const slides = document.getElementsByClassName("slide");
 
