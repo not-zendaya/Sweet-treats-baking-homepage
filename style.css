@@ -300,3 +300,45 @@ nav a:hover{
 #stepsList li {
     margin-bottom: 5px;
 }
+.featured-recipe{
+    background: linear-gradient(135deg, #f9b4ab 0%, #f7a59b 100%);
+    padding: 48px;
+    border-radius: 20px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.featured-recipe h2{
+    font-size: 30px;
+    color: #4a3933;
+    margin-bottom: 20px;
+}
+.featured-recipe p{
+    color: #4a3933;
+    margin-bottom: 20px;
+}
+.toggle-btn{
+    background: white;
+    color: #6b4e3d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.toggle-btn:hover{
+    background: #f5e6d3;
+}
+.ingredients-list{
+    display: none;
+    background: #fffffff2;
+    padding: 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+    text-align: left;
+    
+}
+.ingredients-list.show {
+    display: block;
+}
