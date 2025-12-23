@@ -178,6 +178,29 @@ function toggleIngredients(button){
     }
 }
 
+function handleSubscribe(event){
+    event.preventDefault();
+
+    const email = document.getElementById("emailInput").value;
+    const message = document.getElementById("formMessage");
+
+    if (email === ""){
+        message.textContent = "Please enter your email address.";
+        message.className = "form-message show error";
+    } 
+    else if(email.indexOf("@") === -1 || email.indexOf(".") === -1){
+        message.textContent = "Please enter a valid email address.";
+        message.className = "form-message show error";
+    } 
+    else{
+        message.textContent = "Thank you for subscribing!";
+        message.className = "form-message show success";
+        document.getElementById("emailInput").value = "";
+    }
+}
+
+displayDesserts();
+
 let currentSlide = 0;
 const slides = document.getElementsByClassName("slide");
 
