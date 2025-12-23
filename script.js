@@ -162,6 +162,9 @@ function openModal(id){
     document.getElementById("recipeBox").classList.add("show");
 }
 
+function closeModal(){
+    document.getElementById("recipeBox").classList.remove("show");
+}
 let currentSlide = 0;
 const slides = document.getElementsByClassName("slide");
 
