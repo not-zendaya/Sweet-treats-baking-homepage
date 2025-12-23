@@ -390,6 +390,20 @@ nav a:hover{
 .newsletter-form button:hover{
     background: #6b4e3d;
 }
+footer{
+    background: #6b4e3d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+footer p{
+    margin-bottom: 10px;
+}
+.quote{
+    opacity: 0.9;
+    margin-top: 15px;
+}
+
 .form-message {
     margin-top: 16px; 
     padding: 11px;      
