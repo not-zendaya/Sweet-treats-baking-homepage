@@ -165,6 +165,19 @@ function openModal(id){
 function closeModal(){
     document.getElementById("recipeBox").classList.remove("show");
 }
+
+function toggleIngredients(button){
+    const list = document.getElementById("featuredIngredients");
+
+    if (list.classList.contains("show")){
+        list.classList.remove("show");
+        button.textContent = "Show Ingredients";
+    }else{
+        list.classList.add("show");
+        button.textContent = "Hide Ingredients";
+    }
+}
+
 let currentSlide = 0;
 const slides = document.getElementsByClassName("slide");
 
