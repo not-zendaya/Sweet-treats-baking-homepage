@@ -135,6 +135,12 @@ nav a:hover{
     display: block;
     animation: fadeIn 0.5s;
 }
+.section-title {
+    font-size: 40px;
+    text-align: center;
+    margin: 45px 0 30px;
+    color: #6b4e3d;
+}
 .option-btns{
     display: flex;
     justify-content: center;
@@ -341,4 +347,46 @@ nav a:hover{
 }
 .ingredients-list.show {
     display: block;
+}
+.about{
+    background: #f5e6d3;
+    padding: 45px 30px;
+    text-align: center;
+}
+.about p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.newsletter{
+    background: white;
+    padding: 45px 30px;
+    text-align: center;
+}
+.newsletter-form{
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    gap:15px;
+}
+.newsletter-form input{
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #e6d4bd;
+    border-radius: 25px;
+    font-size: 15px;
+}
+.newsletter-form button{
+    background: #8b6f47;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.newsletter-form button:hover{
+    background: #6b4e3d;
 }
