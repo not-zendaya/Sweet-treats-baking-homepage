@@ -64,21 +64,21 @@
                 <h2 class="section-title">
                     Browse our desserts
                 </h2>
-                <div>
-                    <button>All</button>
-                    <button>Cakes</button>
-                    <button>Cookies</button>
-                    <button>Pastries</button>
+                <div class="option-btns">
+                    <button class="option-btn active" onclick="filterDesserts('all')">All</button>
+                    <button class="option-btn" onclick="filterDesserts('cakes')">Cakes</button>
+                    <button class="option-btn" onclick="filterDesserts('cookies')">Cookies</button>
+                    <button class="option-btn" onclick="filterDesserts('pastries')">Pastries</button>
                 </div>
-                <div class="dessert-grid"></div>
+                <div class="dessert-grid" id="dessertGrid"></div>
             </section>
 
             <section class="featured-recipe">
                 <h2>✨Featured Recipe of the Week✨</h2>
                 <h3>Chocolate Lava Cake</h3>
                 <p>A decadent dessert with a molten chocolate center tha flows like lava when you cut into it. Perfect for special occasions or when you need a chocolate fix!</p>
-                <button> Show Ingredients</button>
-                <div class="ingredient-list">
+                <button class="toggle-btn" onclick="toggleIngredients(this)"> Show Ingredients </button>
+                <div class="ingredients-list" id="featuredIngredients">
                     <h4>Ingredients:</h4>
                     <ul>
                         <li>½ cup (115g) butter</li>
@@ -119,5 +119,18 @@
             <p class="quote"><em>Baking is love made edible ❤️</em></p>
         </footer>
     </div>
+    <div id="recipeBox">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">x</button>
+            <h2 id="recipe-title"></h2>
+            <div id="recipe-image"></div>
+            <p id="recipe-description"></p>
+            <h3>Ingredients:</h3>
+            <ul id="ingredientsList"></ul>
+            <h3>Preparation Steps:</h3>
+            <ol id="stepsList"></ol>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
