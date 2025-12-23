@@ -110,6 +110,17 @@ function displayDesserts(category = "all"){
     });
 }
 
+function filterDesserts(category){
+    const buttons = document.querySelectorAll(".option-btn");
+
+    for (let i = 0; i < buttons.length; i++){
+        buttons[i].classList.remove("active");
+    }
+
+    event.target.classList.add("active");
+    displayDesserts(category);
+}
+
 function generateRandomDessert() {
     const random = desserts[Math.floor(Math.random() * desserts.length)];
     const display = document.getElementById('randomDessert');
